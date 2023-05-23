@@ -1,0 +1,76 @@
+{
+    "name": "BasicInput",
+    "maps": [
+        {
+            "name": "FlogPlayer",
+            "id": "e3bc73cd-43ab-4cb0-923e-1612c322b3ba",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Value",
+                    "id": "64b81620-e062-49ec-8576-3e13022ee0b7",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Charge",
+                    "type": "PassThrough",
+                    "id": "d268f810-2c29-45c4-b692-d031b5da8c6f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "d1273da8-08d6-4c7d-9a9c-d9a255a7b213",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f59b3c26-fad1-4d19-a9de-7cbf444b80f5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "a4a9ebf1-7e43-4aa0-ada0-6da435ede2ad",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "45490f55-6eca-4c17-8f11-5d6dbc5788c6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Charge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
